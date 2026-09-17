@@ -1,0 +1,19 @@
+{
+    "ResourceGroupName": "vatsaltools",
+    "VMName": "vatsaltools-rhel94",
+    "Location": "UK South",
+    "OSSnapshotName": "rhel94-OSDisk-Snapshot-20250729",
+    "DataSnapshotNames": ["  ", "  "],
+    "VMSize": "Standard_D2s_v3",
+    "EnableBootDiagnostics": true,
+    "VNetName" : "vnet4vatsal",
+    "SubnetName" : "testVMsubnet",
+    "NSGName" : "",
+    "NICName" : "",
+    "Tags": {
+        "BuildBy": "vatsal.singh@rackspace.com",
+        "BuildTicket": " ",
+        "BuildDate": "  "
+    }
+}
+

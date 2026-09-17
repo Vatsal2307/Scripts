@@ -1,0 +1,17 @@
+# OS / editor noise
+Thumbs.db
+.DS_Store
+.vscode/
+*.swp
+
+# Local secrets / environment (do not commit)
+*.env
+secrets.json
+*.publishsettings
+*.pfx
+*.key
+
+# Script run artifacts
+*.log
+SSMCheckResults_*.csv
+VM-Creation-*.log

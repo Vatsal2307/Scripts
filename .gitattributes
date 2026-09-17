@@ -1,0 +1,29 @@
+# Normalize line endings.
+# Git stores text with LF internally and checks out with the platform's
+# native endings unless overridden below.
+* text=auto
+
+# Shell scripts must use LF, even on Windows checkouts, or they can fail
+# to run on Linux (e.g. "bad interpreter" / ^M errors).
+*.sh text eol=lf
+
+# Windows-oriented scripts use CRLF on checkout.
+*.ps1  text eol=crlf
+*.psm1 text eol=crlf
+*.psd1 text eol=crlf
+*.cmd  text eol=crlf
+*.bat  text eol=crlf
+
+# Cross-platform text files: keep LF.
+*.md   text eol=lf
+*.json text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+
+# Common binary types (never touch line endings).
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.pdf  binary
+*.zip  binary
